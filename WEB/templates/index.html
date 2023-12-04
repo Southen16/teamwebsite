@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chennai Chetinadu</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li class="element"><a href="#home">Home</a></li>
+          <li class="element"><a href="#about">About</a></li>
+          <li class="element"><a href="#menu">Menu</a></li>
+          <li class="element"><a href="#contact">Contact</a></li>
+          <li class="element"><a href="/login_page">LogIn</a></li>
+          <li class="name"><a> {{name}} </a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Home -->
+
+    <section class="home" id="home">
+      <div class="home__container bd-container bd-grid">
+        <div class="home__data">
+          <h1 class="home__title">Tasty Authentic Food</h1>
+          <h2 class="home__subtitle">
+            Every Day <br />
+            the week.
+          </h2>
+          <a href="#menu" class="button">View Menu</a>
+        </div>
+
+        <img
+          class="element"
+          src="{{ url_for('static', filename='thaali.jpeg.jpg')}}"
+          height="200"
+          width="300"
+          alt="image of thaali"
+        />
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <div class="aboutContainer">
+        <span class="section-subtitle about__initial">About us</span>
+        <h1>We Bring Tasty Food Every Day</h1>
+        <p class="about-p">
+          We cook the best food in the entire city, with excellent customer
+          service, the best meals, and at the best price. Visit us.
+        </p>
+        <div>
+          <img
+            class="aboutimage"
+            src="{{ url_for('static', filename='aboutus.jpeg.jpg')}}"
+            height="200"
+            width="300"
+            alt="image of thaali"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+      <div class="menu section bd-container">
+        <h2 class="section-subtitle1">Special</h2>
+        <h2 class="section-title">Menu of the week</h2>
+        <div class="menu__container bd-grid">
+          <div class="menu__content">
+            <img
+              src="{{ url_for('static', filename='biryani.jpeg.jpg')}}"
+              width="200"
+              alt="Image Biryani"
+              class="menu__img"
+            />
+            <h3 class="menu__name">Chicken Biryani</h3>
+            <a href="#" class="button menu__button">
+              <span class="menu__price">$15.00</span>
+              <i class="bx bx-cart-alt"></i>
+            </a>
+          </div>
+          <div class="menu__content">
+            <img
+              src="{{ url_for('static', filename='fish.jpg')}}"
+              width="200"
+              alt="Fish Image"
+              class="menu__img"
+            />
+            <h3 class="menu__name">Salad with fish</h3>
+            <a href="#" class="button menu__button">
+              <span class="menu__price">$18.99</span>
+              <i class="bx bx-cart-alt"></i>
+            </a>
+          </div>
+          <div class="menu__content">
+            <img
+              src="{{ url_for('static', filename='special.webp')}}"
+              width="200"
+              alt="Andhra Special"
+              class="menu__img"
+            />
+            <h3 class="menu__name">Andhra Special</h3>
+
+            <a href="#" class="button menu__button">
+              <span class="menu__price">$9.50</span>
+              <i class="bx bx-cart-alt"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact">
+      <div class="contact section bd-container">
+        <div class="contact__container bd-grid">
+          <div class="contact__data">
+            <span class="section-subtitle contact__initial">Let's talk</span>
+            <h2 class="section-title contact__initial">Contact us</h2>
+            <p class="contact__description">
+              If you want to reserve a table in our restaurant, contact us, and
+              we will attend to you quickly with our 24/7 chat service.
+            </p>
+          </div>
+          <div class="contact__button">
+            <a href="#" class="button1">Contact us now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---->
+
+   
+
+    <!-- Footer -->
+    <footer class="footer section bd-container">
+      <div class="footer__container bd-grid">
+        <div class="footer__content">
+          <a href="#" class="footer__logo">Chennai Chetinadu</a><br />
+          <span class="footer__description">Restaurant</span>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">Services</h3>
+          <ul>
+            <li><a href="#" class="footer__link">Delivery</a></li>
+            <li><a href="#" class="footer__link">Pricing</a></li>
+            <li><a href="#" class="footer__link">Fast food</a></li>
+            <li><a href="#" class="footer__link">Reserve your spot</a></li>
+          </ul>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">Information</h3>
+          <ul>
+            <li><a href="#" class="footer__link">Event</a></li>
+            <li><a href="#" class="footer__link">Contact us</a></li>
+            <li><a href="#" class="footer__link">Privacy policy</a></li>
+            <li><a href="#" class="footer__link">Terms of services</a></li>
+          </ul>
+        </div>
+        <div class="footer__content1">
+          <h3 class="footer__title">Address</h3>
+          <p class="footer__link">2814 W Bell Rd Phoenix, AZ 85053</p>
+
+          <p class="footer__link">
+            <a
+              class="footer__link"
+              href="mailto:nama.southen16@gmail.com"
+              target="_blank"
+              >nama.southen16@gmail.com</a
+            >
+          </p>
+
+          <p class="footer__link" class="footer__copy">
+            &copy; 2023 Southen. All rights reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js')}}"></script>
+  </body>
+</html>

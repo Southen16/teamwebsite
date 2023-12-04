@@ -1,0 +1,610 @@
+/* Reset some default styles */
+body,
+h1,
+p,
+ul,
+li,
+figure,
+figcaption {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #ff6347;
+  list-style: none;
+}
+
+h2 {
+  color: yellowgreen;
+}
+
+/* Box-sizing border-box for all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Header styles */
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #ff6347; /* Change to your preferred hover color */
+}
+
+/* Home section styles */
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a background color for the entire page */
+body {
+  background-color: white;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Style the home section */
+.home {
+  background-color: rgb(231, 225, 225); /* Set the background color for the section */
+  padding: 80px 0; /* Add some padding to the top and bottom */
+}
+
+/* Center the content inside the section */
+.home__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Style the title */
+.home__title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Style the subtitle */
+.home__subtitle {
+  font-size: 1.5rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Style the button */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: #e8491d;
+  color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+/* Change button color on hover */
+.button:hover {
+  background-color: #333;
+}
+
+/* Style the image */
+.element {
+  margin-top: 20px; /* Add some space between the text and the image */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+
+
+
+/* About section styles */
+#about {
+  background-color: #ffffff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.aboutContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-subtitle,
+h1 {
+  flex-basis: 100%;
+  font-size: 2.5em;
+  color: black; /* Choose your preferred text color */
+  margin-bottom: 20px;
+}
+
+.about-p {
+  flex-basis: 60%;
+  font-size: 1.2em;
+  color: #666666;
+  margin-bottom: 30px;
+}
+
+.aboutimage {
+  flex-basis: 40%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 30px 30px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .about-p, .aboutimage {
+    flex-basis: 100%;
+  }
+}
+
+/* Menu section styles */
+.menu {
+  padding: 50px 20px;
+  background-color: aliceblue;
+}
+
+.menu__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 100px;
+}
+
+.menu__content {
+  text-align: center;
+}
+
+.section-title, .section-subtitle1 {
+  color: darkcyan;
+  text-align: center;
+}
+
+.menu__img {
+  border-radius: 60px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.menu__name {
+  font-size: 24px;
+  margin: 10px 0;
+  color: orangered;
+}
+
+.menu__detail {
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.menu__price {
+  font-weight: bold;
+  color: #333;
+}
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ff6347;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+.button1{
+  margin-top: 100px;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ff6347;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+.button:hover {
+  background-color: #333; /* Change to your preferred hover color */
+}
+
+/* Contact section styles */
+.contact {
+  background-color: rgb(243, 241, 241);
+  padding: 100px 20px;
+}
+
+.contact__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.contact__data {
+  text-align: center;
+}
+
+.contact__description {
+  color: #888;
+  margin-bottom: 20px;
+}
+
+.contact__button {
+  text-align: center;
+}
+
+/* Footer styles */
+.footer {
+  background-color: aliceblue;
+  color: #fff;
+  padding: 50px 20px;
+  list-style: none;
+}
+
+.footer__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+.footer__content,
+.footer__content1 {
+  text-align: center;
+}
+
+.footer__logo {
+  margin-top: 100px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff6347;
+  text-decoration: none;
+}
+
+.footer__description {
+  color: #ff6347;
+  margin-bottom: 20px;
+}
+
+.footer__social {
+  font-size: 24px;
+  margin-right: 20px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer__social:hover {
+  color: cornflowerblue; /* Change to your preferred hover color */
+}
+
+.footer__title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: black;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer__link:hover {
+  color: #ff6347; /* Change to your preferred hover color */
+}
+
+.footer__copy {
+  font-size: 15px;
+  margin-top: 20px;
+}
+/* Add these styles to your CSS */
+/* Responsive navigation styles */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px 0;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+
+.element {
+  margin-right: 20px;
+}
+
+/* Responsive menu styles */
+@media (max-width: 768px) {
+  .nav-toggle {
+      display: flex;
+  }
+  
+
+  .nav-list {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-list.show {
+      display: flex;
+  }
+
+  .element {
+      margin: 0;
+      padding: 10px;
+      text-align: center;
+      border-bottom: 1px solid #ccc;
+  }
+}
+
+
+
+/* Reset some default styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Style the container */
+.login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the header */
+.login-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-header h2 {
+  color: #333;
+}
+
+/* Style the form */
+.login-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style form groups */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Style labels */
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Style input fields */
+input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style the submit button */
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Style the signup link */
+.signup-link {
+  text-align: center;
+}
+
+.signup-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+
+/* styles.css */
+
+/* Add your styles for login and registration pages here */
+
+.login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-header h2 {
+  color: #333;
+}
+
+.login-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.signup-link {
+  text-align: center;
+}
+
+.signup-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+/* styles.css */
+
+/* Add your styles for login and registration pages here */
+
+.login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-header h2 {
+  color: #333;
+}
+
+.login-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.signup-link {
+  text-align: center;
+}
+
+.signup-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
